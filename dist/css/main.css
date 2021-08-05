@@ -16,7 +16,7 @@
 
 .btn-main {
   color: #ccc;
-  background: #ffbc00;
+  background: #8a240c;
 }
 .btn-light {
   color: #333;
@@ -30,7 +30,8 @@
 button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
-  background-color: #ffbc00;
+  background-color: #8a240c;
+  color: #f4f4f4;
 }
 
 .text-center {
@@ -39,7 +40,34 @@ input[class^=btn-]:hover {
 
 .lead {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.pad-tb-1 {
+  padding: 1rem 0;
+}
+.pad-tb-2 {
+  padding: 2rem 0;
+}
+.pad-tb-3 {
+  padding: 3rem 0;
+}
+.pad-tb-4 {
+  padding: 4rem 0;
+}
+
+.margin-tb-1 {
+  margin: 1rem 0;
+}
+.margin-tb-2 {
+  margin: 2rem 0;
+}
+.margin-tb-3 {
+  margin: 3rem 0;
+}
+.margin-tb-4 {
+  margin: 4rem 0;
 }
 
 * {
@@ -102,7 +130,7 @@ img {
   display: flex;
 }
 #main-nav li {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0 0 3rem;
 }
 #main-nav li a {
   color: #fff;
@@ -114,7 +142,18 @@ img {
   border-color: #ccc;
 }
 #main-nav li a.current {
-  border-color: #ffbc00;
+  border-color: #8a240c;
+}
+
+#home-a .specials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#home-a .fas {
+  color: #8a240c;
+  padding-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
-// google font. use: font-family: 'Dosis', sans-serif;
+// google font. use -> font-family: 'Dosis', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
-//import scss modules here:
+//import scss modules
 @import 'variables';
 @import 'utilities';
 
@@ -75,7 +75,7 @@ img {
   }
 
   li {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0  0 3rem;
 
     a {
       color: #fff;
@@ -90,6 +90,24 @@ img {
       &.current {
         border-color: $main-color;
       }
+    }
+  }
+}
+
+//home sections
+#home {
+  &-a {
+    //container that holds specialization divs
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    //font awesome icons
+    .fas {
+      color: $main-color;
+      padding-bottom: .5rem;
     }
   }
 }

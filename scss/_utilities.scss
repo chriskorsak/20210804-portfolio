@@ -1,3 +1,4 @@
+//container class pushes content to center
 .container {
   max-width: $website-width;
   padding: 0 1.5rem;
@@ -36,13 +37,33 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: $main-color;
+  color: $light-color;
 }
 
+//center text
 .text-center {
   text-align: center;
 }
 
+//callout text
 .lead {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: $dark-color;
+}
+
+//padding classes
+.pad-tb {
+  &-1 {padding: 1rem 0;}
+  &-2 {padding: 2rem 0;}
+  &-3 {padding: 3rem 0;}
+  &-4 {padding: 4rem 0;}
+}
+
+//margin classes
+.margin-tb {
+  &-1 {margin: 1rem 0;}
+  &-2 {margin: 2rem 0;}
+  &-3 {margin: 3rem 0;}
+  &-4 {margin: 4rem 0;}
 }
