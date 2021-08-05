@@ -67,3 +67,18 @@ input[class^='btn-']:hover {
   &-3 {margin: 3rem 0;}
   &-4 {margin: 4rem 0;}
 }
+
+//thick graphical underline to accent text
+.bottom-line {
+  height: 3px;
+  width: 3rem;
+  background-color: $main-color;
+  margin: 0 auto 1rem auto;
+}
+
+//section title
+.section-title {
+  font-weight: 300;
+}
+
+
