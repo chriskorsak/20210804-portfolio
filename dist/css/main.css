@@ -1,5 +1,120 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #ccc;
+  background: #ffbc00;
+}
+.btn-light {
+  color: #333;
+  background: #f4f4f4;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background: #333;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #ffbc00;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#header-home {
+  color: #fff;
+  background: #333 url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+#header-home #hero {
+  text-align: center;
+  padding-top: 20%;
+}
+#header-home #hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+#header-subpage {
+  color: #ddd;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+#main-nav li a {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.5s;
+}
+#main-nav li a:hover {
+  border-color: #ccc;
+}
+#main-nav li a.current {
+  border-color: #ffbc00;
 }
 
 /*# sourceMappingURL=main.css.map */

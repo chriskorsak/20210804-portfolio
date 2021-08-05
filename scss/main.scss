@@ -1,5 +1,96 @@
-$color: red;
+// google font. use: font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
-h1{
-  color: $color;
+//import scss modules here:
+@import 'variables';
+@import 'utilities';
+
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
 }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul  {
+  list-style: none; 
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+//header
+#header {
+  &-home {
+    color: #fff;
+    background: $dark-color $bg-image no-repeat center;
+    background-size: cover;
+    height: 100vh;
+
+    //header hero content
+    #hero {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+      }
+    }
+  }
+  &-subpage {
+    color: #ddd;
+  }
+}
+
+#logo {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+//main nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: $medium-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
