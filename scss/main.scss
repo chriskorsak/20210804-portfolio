@@ -110,5 +110,34 @@ img {
       padding-bottom: .5rem;
     }
   }
+  &-b {
+    //container that holds stats
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+      }
+
+      li {
+        line-height: 2;
+
+        &-stats-title {
+          font-size: 1.5rem;
+        }
+
+        &-stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
