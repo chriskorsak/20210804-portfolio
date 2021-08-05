@@ -185,3 +185,36 @@ img {
   }
 }
 
+//footer
+#main-footer {
+  background: $dark-color;
+  color: $light-color;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    
+    //social icons
+    .social {
+      margin-left: 1rem;
+
+      a {
+        color: $light-color;
+      }
+
+      .fab {
+        margin: 0 .4rem;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: $medium-color;
+        }
+      }
+    }
+  
+  }
+}
+

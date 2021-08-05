@@ -225,4 +225,29 @@ img {
   transition: all 0.5s;
 }
 
+#main-footer {
+  background: #333;
+  color: #f4f4f4;
+  text-align: center;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+#main-footer .footer-content .social {
+  margin-left: 1rem;
+}
+#main-footer .footer-content .social a {
+  color: #f4f4f4;
+}
+#main-footer .footer-content .social .fab {
+  margin: 0 0.4rem;
+  font-size: 1.2rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  color: #ccc;
+}
+
 /*# sourceMappingURL=main.css.map */
