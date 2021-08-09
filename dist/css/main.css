@@ -34,6 +34,23 @@ input[class^=btn-]:hover {
   color: #f4f4f4;
 }
 
+.bg-main {
+  background: #8a240c;
+  color: #f4f4f4;
+}
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-medium {
+  background: #ccc;
+  color: #f4f4f4;
+}
+
 .text-center {
   text-align: center;
 }
@@ -79,6 +96,7 @@ input[class^=btn-]:hover {
 
 .section-title {
   font-weight: 300;
+  text-align: center;
 }
 
 * {
@@ -124,7 +142,10 @@ img {
   line-height: 1.2;
 }
 #header-subpage {
-  color: #ddd;
+  color: #fff;
+  background: #333 url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  height: 6rem;
 }
 
 #logo {
@@ -223,6 +244,66 @@ img {
   line-height: 1rem;
   padding: 1rem;
   transition: all 0.5s;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bio-headshot bio bio" "award1 award2 award3";
+  gap: 1rem;
+}
+#about-a .bio-headshot {
+  grid-area: bio-headshot;
+}
+#about-a .bio {
+  grid-area: bio;
+  padding: 0.5rem;
+}
+#about-a .award-1 {
+  grid-area: award1;
+}
+#about-a .award-2 {
+  grid-area: award2;
+}
+#about-a .award-3 {
+  grid-area: award3;
+}
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #8a240c;
+  margin: 1rem;
+}
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+}
+#about-b .progress div {
+  height: 100%;
+  color: #fff;
+  background: #8a240c;
+}
+#about-c .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+#about-c .testimonials ul {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+#about-c .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#about-c .testimonials img {
+  height: 50px;
+  width: auto;
+  margin-right: 0.2rem;
 }
 
 #main-footer {

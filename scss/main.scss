@@ -55,7 +55,10 @@ img {
     }
   }
   &-subpage {
-    color: #ddd;
+    color: #fff;
+    background: $dark-color $bg-image no-repeat center;
+    background-size: cover;
+    height: 6rem;
   }
 }
 
@@ -155,6 +158,7 @@ img {
       width: 3rem;
       height: 3rem;
       line-height: 3rem;
+      //position container set to relative so you can position the process step child element with absolute positioning (top right, in this case)
       position: relative;
       transition: all .5s;
 
@@ -181,6 +185,87 @@ img {
       line-height: 1rem;
       padding: 1rem;
       transition: all .5s;
+    }
+  }
+}
+
+//about sections
+#about {
+  &-a {
+    //bio headshot, info about me, awards
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bio-headshot bio bio'
+        'award1 award2 award3';
+      gap: 1rem;
+    }
+
+    .bio-headshot {
+      grid-area: bio-headshot;
+    }
+
+    .bio {
+      grid-area: bio;
+      padding: .5rem;
+    }
+
+    .award-1 {
+      grid-area: award1;
+    }
+    .award-2 {
+      grid-area: award2;
+    }
+    .award-3 {
+      grid-area: award3;
+    }
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+  &-b {
+    //technical skills progress bars
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: .3rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        background: $main-color;
+      }
+    }
+  }
+  &-c {
+  //testimonials
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+
+      ul {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      p {
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+        padding: .5rem;
+
+      }
+      img {
+        height: 50px;
+        width: auto;
+        margin-right: .2rem;
+      }
     }
   }
 }
@@ -217,4 +302,6 @@ img {
   
   }
 }
+
+
 

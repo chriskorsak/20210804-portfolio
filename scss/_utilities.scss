@@ -40,6 +40,29 @@ input[class^='btn-']:hover {
   color: $light-color;
 }
 
+//backgrounds
+.bg {
+  &-main {
+    background: $main-color;
+    color: $light-color;
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: $light-color;
+  }
+
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-medium {
+    background: $medium-color;
+    color: $light-color;
+  }
+}
+
 //center text
 .text-center {
   text-align: center;
@@ -79,6 +102,7 @@ input[class^='btn-']:hover {
 //section title
 .section-title {
   font-weight: 300;
+  text-align: center;
 }
 
 
