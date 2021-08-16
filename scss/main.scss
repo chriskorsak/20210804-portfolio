@@ -67,6 +67,11 @@ img {
 #logo {
   text-transform: uppercase;
   font-size: 2.5rem;
+
+  &-mobile {
+    display: none;
+    font-size: 2rem;
+  }
 }
 
 //main nav
@@ -350,6 +355,9 @@ img {
   
   }
 }
+
+// import media queries
+@import 'media-queries';
 
 
 

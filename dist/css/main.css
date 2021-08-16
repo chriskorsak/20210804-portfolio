@@ -179,6 +179,10 @@ img {
   text-transform: uppercase;
   font-size: 2.5rem;
 }
+#logo-mobile {
+  display: none;
+  font-size: 2rem;
+}
 
 #main-nav {
   display: flex;
@@ -390,6 +394,92 @@ img {
 }
 #main-footer .footer-content .social .fab:hover {
   color: #ccc;
+}
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  #logo {
+    display: none;
+  }
+
+  #logo-mobile {
+    display: block;
+  }
+
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+
+  #header-home {
+    height: 10rem;
+    background-position: 50% 45%;
+  }
+  #header-home #hero {
+    display: none;
+  }
+  #header-subpage {
+    height: 10rem;
+  }
+
+  #home-a .specials,
+#home-b .stats,
+#home-c .process,
+#about-c .testimonials,
+.projects {
+    grid-template-columns: 1fr;
+  }
+
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem;
+  }
+  #home-a .specials div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #home-b .stats div {
+    padding: 1.5rem 0;
+  }
+
+  #about-a .about-info {
+    grid-template-areas: "bio-headshot" "bio" "award1" "award2" "award3";
+  }
+
+  #contact-a .text-fields {
+    grid-template-areas: "name" "email" "phone" "subject" "message";
+  }
+  #contact-c h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-footer .footer-content .social {
+    padding-top: 0.5rem;
+  }
+}
+@media (max-height: 580px) {
+  #header-home #hero {
+    padding-top: 3rem;
+  }
+}
+@media (max-height: 330px) {
+  #header-home #hero h1 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

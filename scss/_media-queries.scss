@@ -1,0 +1,142 @@
+//tablets
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+//phones
+@media (max-width: 500px) {
+  //nav
+  #logo {
+    display: none;
+  }
+
+  #logo-mobile {
+    display: block;
+  }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+  
+  //header
+  #header {
+    &-home {
+      height: 10rem;
+      background-position: 50% 45%;
+
+
+      #hero {
+        display: none;
+      }
+    }
+
+    &-subpage {
+      height: 10rem;
+    }
+  }
+
+  //stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-c .testimonials,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  //home page
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stats div {
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  //about page
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+        'bio-headshot'
+        'bio'
+        'award1'
+        'award2'
+        'award3';
+      }
+    }
+  }
+
+  //contact page
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'email'
+          'phone'
+          'subject'
+          'message';
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  #main-footer {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+
+      .social {
+        padding-top: .5rem;
+      }
+    }
+  }
+}
+
+//landscape orientation
+@media (max-height: 580px) {
+  #header-home {
+    #hero {
+      padding-top: 3rem;
+    }
+  }
+}
+
+//landscape orientation extra small screens
+@media (max-height: 330px) {
+  #header-home {
+    #hero {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
