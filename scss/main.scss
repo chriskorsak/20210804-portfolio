@@ -311,6 +311,9 @@ img {
       padding: .5rem 1rem;
       font-family: inherit;
     }
+    button[type='submit'] {
+      width: 50%;
+    }
   }
   &-b {
     text-align: center;

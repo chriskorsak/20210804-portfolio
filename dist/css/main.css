@@ -363,6 +363,9 @@ img {
   padding: 0.5rem 1rem;
   font-family: inherit;
 }
+#contact-a button[type=submit] {
+  width: 50%;
+}
 #contact-b {
   text-align: center;
 }
@@ -458,6 +461,9 @@ img {
 
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "phone" "subject" "message";
+  }
+  #contact-a button[type=submit] {
+    width: 100%;
   }
   #contact-c h1 {
     font-size: 1.5rem;

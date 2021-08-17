@@ -100,7 +100,11 @@
           'subject'
           'message';
       }
-    }
+
+      button[type='submit'] {
+        width: 100%;
+      }
+     }
 
     &-c {
       h1 {
