@@ -214,7 +214,10 @@ img {
 
     .bio {
       grid-area: bio;
+      border: 1px solid $medium-color;
+      // border-radius: 5px;
       padding: .5rem;
+      text-align: left;
     }
 
     .award-1 {
