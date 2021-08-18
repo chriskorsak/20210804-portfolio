@@ -319,6 +319,10 @@ img {
         grid-area: message;
         height: 100px;
       }
+      //center capcha checkbox
+      .capcha {
+        margin: auto;
+      }
     }
     .text-input {
       padding: .5rem 1rem;
