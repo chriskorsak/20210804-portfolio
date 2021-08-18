@@ -377,8 +377,11 @@ img {
   padding: 0.5rem 1rem;
   font-family: inherit;
 }
+#contact-a .g-recaptcha div {
+  margin: auto;
+}
 #contact-a button[type=submit] {
-  width: 50%;
+  width: 20%;
 }
 #contact-b {
   text-align: center;

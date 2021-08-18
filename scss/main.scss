@@ -327,8 +327,13 @@ img {
       padding: .5rem 1rem;
       font-family: inherit;
     }
+    //captcha checkbox styles
+    .g-recaptcha div {
+      margin: auto;
+    }
+
     button[type='submit'] {
-      width: 50%;
+      width: 20%;
     }
   }
   &-b {
