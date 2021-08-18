@@ -319,6 +319,9 @@ img {
         grid-area: message;
         height: 100px;
       }
+      .hidden {
+        display: none;
+      }
     }
     .text-input {
       padding: .5rem 1rem;
