@@ -99,6 +99,12 @@
           'phone'
           'subject'
           'message';
+        
+        //make captcha checkbox fit on small mobile screens
+        .g-recaptcha {
+          transform:scale(0.77);
+          transform-origin:0 0;
+          }
       }
 
       button[type='submit'] {
