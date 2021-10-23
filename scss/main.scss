@@ -48,6 +48,12 @@ img {
     #hero {
       text-align: center;
       padding-top: 20%;
+      
+      h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        letter-spacing: .1rem;
+      }
 
       .lead {
         word-spacing: .2rem;
@@ -56,10 +62,21 @@ img {
 
       }
 
-      h1 {
-        font-size: 3rem;
-        line-height: 1.2;
-        letter-spacing: .1rem;
+      .social-hero {
+        margin-top: 1.5rem;
+
+        a {
+          color: $light-color;
+        }
+
+        .fab {
+          margin: 0 .4rem;
+          font-size: 2rem;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
       }
     }
   }
