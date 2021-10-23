@@ -355,6 +355,14 @@ img {
   }
   &-b {
     text-align: center;
+
+    a {
+      color: $light-color;
+      
+      &:hover {
+        color: $medium-color;
+      }
+    }
   }
   &-c {
     h1 {
