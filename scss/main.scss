@@ -239,7 +239,7 @@ img {
     .bio {
       grid-area: bio;
       border: 1px solid $medium-color;
-      padding: .5rem;
+      padding: 1.5rem;
       text-align: left;
 
       p {
@@ -358,7 +358,7 @@ img {
 
     a {
       color: $light-color;
-      
+
       &:hover {
         color: $medium-color;
       }

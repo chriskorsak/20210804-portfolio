@@ -307,7 +307,7 @@ img {
 #about-a .bio {
   grid-area: bio;
   border: 1px solid #ccc;
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-align: left;
 }
 #about-a .bio p {
