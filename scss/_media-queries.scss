@@ -1,7 +1,7 @@
 //tablets
 @media (max-width: 800px) {
   #header-home {
-    height: 30rem;
+    height: 35rem;
 
     .header-content {
       padding-top: 5rem;
@@ -50,7 +50,7 @@
   #home-b .stats,
   #home-c .process,
   #about-c .testimonials,
-  .projects {
+  .hero-projects, .other-projects {
     grid-template-columns: 1fr;
   }
 

@@ -1,16 +1,18 @@
-.projects {
+.hero-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.other-projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .project {
   transition: all .5s;
   border: 1px solid $light-color;
-
-  &:hover {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
   img {
     display: block;
@@ -19,13 +21,15 @@
     transition: all .5s;
   }
 
-  &:hover img {
-    opacity: .8;
-  }
-
   &-text-wrap {
     background-color: $light-color;
     color: $dark-color;
+    padding: 1rem;
+
+    .work-link {
+      font-size: 1.2rem;
+      color: $main-color;
+    }
   }
 
 }

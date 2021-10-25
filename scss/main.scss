@@ -72,6 +72,7 @@ img {
         .fab {
           margin: 0 .4rem;
           font-size: 2rem;
+          transition: all .5s;
 
           &:hover {
             color: $main-color;
@@ -278,6 +279,17 @@ img {
         background: $main-color;
       }
     }
+    .years {
+      background-color: $dark-color;
+      display: flex;
+      padding: .2rem;
+      margin-top: 1.5rem;
+
+      div {
+        flex: 1;
+        // border: 1px solid white;
+      }
+    }
   }
   &-c {
   //testimonials
@@ -407,6 +419,3 @@ img {
 
 // import media queries
 @import 'media-queries';
-
-
-
