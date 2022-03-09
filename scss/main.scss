@@ -270,32 +270,33 @@ img {
     }
   }
   &-b {
-    //technical skills progress bars
-    .progress {
-      overflow: hidden;
-      height: 20px;
-      background: $medium-color;
-      border-radius: 5px;
-      margin-bottom: 0.3rem;
+    .technical-skills {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $medium-color;
+        color: $main-color;
+        padding: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        line-height: 1rem;
+        transition: all 0.5s;
 
-      div {
-        height: 100%;
-        color: #fff;
-        background: $main-color;
-      }
-    }
-    .years {
-      background-color: $dark-color;
-      display: flex;
-      padding: 0.2rem;
-      margin-top: 1.5rem;
-
-      div {
-        flex: 1;
-        // border: 1px solid white;
+        &:hover {
+          background: $light-color;
+          color: $main-color;
+        }
       }
     }
   }
+
   &-c {
     //testimonials
     .testimonials {

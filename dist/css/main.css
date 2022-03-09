@@ -340,26 +340,29 @@ img {
   color: #8a240c;
   margin: 1rem;
 }
-#about-b .progress {
-  overflow: hidden;
-  height: 20px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 0.3rem;
+#about-b .technical-skills {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
-#about-b .progress div {
-  height: 100%;
-  color: #fff;
-  background: #8a240c;
-}
-#about-b .years {
-  background-color: #333;
+#about-b .technical-skills h4 {
   display: flex;
-  padding: 0.2rem;
-  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ccc;
+  color: #8a240c;
+  padding: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 1rem;
+  transition: all 0.5s;
 }
-#about-b .years div {
-  flex: 1;
+#about-b .technical-skills h4:hover {
+  background: #f4f4f4;
+  color: #8a240c;
 }
 #about-c .testimonials {
   display: grid;
@@ -463,6 +466,15 @@ img {
   #header-home .header-content {
     padding-top: 5rem;
   }
+
+  #about-b .technical-skills {
+    gap: 1rem;
+  }
+  #about-b .technical-skills h4 {
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
 }
 @media (max-width: 500px) {
   #logo {
@@ -496,7 +508,8 @@ img {
 #home-b .stats,
 #home-c .process,
 #about-c .testimonials,
-.hero-projects, .other-projects {
+.hero-projects,
+.other-projects {
     grid-template-columns: 1fr;
   }
 
@@ -514,6 +527,9 @@ img {
 
   #about-a .about-info {
     grid-template-areas: "bio-headshot" "bio" "award1" "award2" "award3";
+  }
+  #about-b .technical-skills {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #contact-a .text-fields {

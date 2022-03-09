@@ -7,6 +7,19 @@
       padding-top: 5rem;
     }
   }
+
+  #about {
+    &-b {
+      .technical-skills {
+        gap: 1rem;
+        h4 {
+          padding: 2rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
 }
 
 //phones
@@ -27,13 +40,12 @@
       padding: 1rem;
     }
   }
-  
+
   //header
   #header {
     &-home {
       height: 10rem;
       background-position: 50% 45%;
-
 
       #hero {
         display: none;
@@ -50,7 +62,8 @@
   #home-b .stats,
   #home-c .process,
   #about-c .testimonials,
-  .hero-projects, .other-projects {
+  .hero-projects,
+  .other-projects {
     grid-template-columns: 1fr;
   }
 
@@ -80,11 +93,17 @@
     &-a {
       .about-info {
         grid-template-areas:
-        'bio-headshot'
-        'bio'
-        'award1'
-        'award2'
-        'award3';
+          'bio-headshot'
+          'bio'
+          'award1'
+          'award2'
+          'award3';
+      }
+    }
+
+    &-b {
+      .technical-skills {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -98,13 +117,13 @@
           'email'
           'phone'
           'subject'
-          'message';        
+          'message';
       }
 
       button[type='submit'] {
         width: 100%;
       }
-     }
+    }
 
     &-c {
       h1 {
@@ -119,7 +138,7 @@
       flex-direction: column;
 
       .social {
-        padding-top: .5rem;
+        padding-top: 0.5rem;
       }
     }
   }
