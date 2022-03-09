@@ -24,11 +24,13 @@ a {
   color: $dark-color;
 }
 
-ul  {
-  list-style: none; 
+ul {
+  list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -48,18 +50,17 @@ img {
     #hero {
       text-align: center;
       padding-top: 20%;
-      
+
       h1 {
         font-size: 3.5rem;
         line-height: 1.2;
-        letter-spacing: .1rem;
+        letter-spacing: 0.1rem;
       }
 
       .lead {
-        word-spacing: .2rem;
+        word-spacing: 0.2rem;
         font-weight: 500;
-        text-shadow: 0px 5px 10px rgba(255, 255, 255, .5)
-
+        text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
       }
 
       .social-hero {
@@ -70,9 +71,9 @@ img {
         }
 
         .fab {
-          margin: 0 .4rem;
+          margin: 0 0.4rem;
           font-size: 2rem;
-          transition: all .5s;
+          transition: all 0.5s;
 
           &:hover {
             color: $main-color;
@@ -110,7 +111,7 @@ img {
   }
 
   li {
-    padding: 1rem 0  0 3rem;
+    padding: 1rem 0 0 3rem;
 
     a {
       color: #fff;
@@ -142,7 +143,7 @@ img {
     //font awesome icons
     .fas {
       color: $main-color;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
     }
   }
   &-b {
@@ -176,7 +177,7 @@ img {
   }
 
   &-c {
-  //container that holds creative process steps
+    //container that holds creative process steps
     .process {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -192,7 +193,7 @@ img {
       line-height: 3rem;
       //position container set to relative so you can position the process step child element with absolute positioning (top right, in this case)
       position: relative;
-      transition: all .5s;
+      transition: all 0.5s;
 
       &:hover {
         background: $main-color;
@@ -216,7 +217,7 @@ img {
       width: 1rem;
       line-height: 1rem;
       padding: 1rem;
-      transition: all .5s;
+      transition: all 0.5s;
     }
   }
 }
@@ -243,8 +244,12 @@ img {
       padding: 1.5rem;
       text-align: left;
 
+      a {
+        text-decoration: underline;
+      }
+
       p {
-        padding: .5rem 0rem;
+        padding: 0.5rem 0rem;
       }
     }
 
@@ -271,7 +276,7 @@ img {
       height: 20px;
       background: $medium-color;
       border-radius: 5px;
-      margin-bottom: .3rem;
+      margin-bottom: 0.3rem;
 
       div {
         height: 100%;
@@ -282,7 +287,7 @@ img {
     .years {
       background-color: $dark-color;
       display: flex;
-      padding: .2rem;
+      padding: 0.2rem;
       margin-top: 1.5rem;
 
       div {
@@ -292,11 +297,11 @@ img {
     }
   }
   &-c {
-  //testimonials
+    //testimonials
     .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: .5rem;
+      gap: 0.5rem;
 
       ul {
         display: flex;
@@ -307,13 +312,12 @@ img {
       p {
         border: 1px solid $medium-color;
         border-radius: 5px;
-        padding: .5rem;
-
+        padding: 0.5rem;
       }
       img {
         height: 50px;
         width: auto;
-        margin-right: .2rem;
+        margin-right: 0.2rem;
       }
     }
   }
@@ -325,7 +329,7 @@ img {
   &-a {
     .text-fields {
       display: grid;
-      grid-template-areas: 
+      grid-template-areas:
         'name email'
         'subject phone'
         'message message';
@@ -353,7 +357,7 @@ img {
       }
     }
     .text-input {
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       font-family: inherit;
     }
     //captcha checkbox styles
@@ -395,7 +399,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 4rem;
-    
+
     //social icons
     .social {
       margin-left: 1rem;
@@ -405,7 +409,7 @@ img {
       }
 
       .fab {
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
         font-size: 1.2rem;
 
         &:hover {
@@ -413,7 +417,6 @@ img {
         }
       }
     }
-  
   }
 }
 

@@ -152,7 +152,9 @@ ul {
   list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -316,6 +318,9 @@ img {
   border: 1px solid #ccc;
   padding: 1.5rem;
   text-align: left;
+}
+#about-a .bio a {
+  text-decoration: underline;
 }
 #about-a .bio p {
   padding: 0.5rem 0rem;
