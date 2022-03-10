@@ -315,15 +315,11 @@ img {
 }
 #about-a .bio {
   grid-area: bio;
-  border: 1px solid #ccc;
-  padding: 1.5rem;
+  padding: 0 0.5rem;
   text-align: left;
 }
 #about-a .bio a {
   text-decoration: underline;
-}
-#about-a .bio p {
-  padding: 0.5rem 0rem;
 }
 #about-a .award-1 {
   grid-area: award1;

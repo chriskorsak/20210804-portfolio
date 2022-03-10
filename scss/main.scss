@@ -240,8 +240,8 @@ img {
 
     .bio {
       grid-area: bio;
-      border: 1px solid $medium-color;
-      padding: 1.5rem;
+      // border: 1px solid $medium-color;
+      padding: 0 0.5rem;
       text-align: left;
 
       a {
@@ -249,7 +249,7 @@ img {
       }
 
       p {
-        padding: 0.5rem 0rem;
+        // padding: 0.5rem 0rem;
       }
     }
 
