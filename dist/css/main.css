@@ -312,6 +312,7 @@ img {
 }
 #about-a .bio-headshot {
   grid-area: bio-headshot;
+  border: 1px solid #577577;
 }
 #about-a .bio {
   grid-area: bio;
