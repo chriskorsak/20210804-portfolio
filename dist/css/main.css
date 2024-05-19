@@ -114,6 +114,7 @@ input[class^=btn-]:hover {
 .project {
   transition: all 0.5s;
   border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 .project img {
@@ -123,7 +124,6 @@ input[class^=btn-]:hover {
   transition: all 0.5s;
 }
 .project-text-wrap {
-  background-color: #f4f4f4;
   color: #333;
   padding: 1rem;
 }
@@ -321,6 +321,9 @@ img {
 }
 #about-a .bio a {
   text-decoration: underline;
+}
+#about-a .bio p {
+  padding: 0.5rem 0rem;
 }
 #about-a .award-1 {
   grid-area: award1;
